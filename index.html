@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Find Unclosed Tags - Unclosed Tag Checker - HTML5 - by Alicia Ramirez</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="js/numberfy.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Closing Tag Checker for HTML5</h1>
+        <p class="byline"><a href="http://www.aliciaramirez.com/contact/">By Alicia Ramirez</a></p>
+    </header>
+    <main>
+        <p>In HTML5, under certain circumstances, <a
+                href="http://webdesign.about.com/od/htmltags/qt/optional-html-end-tags-when-to-include-them.htm">some
+                closing tags are optional</a>. If you leave those closing tags out, the <a
+                href="http://validator.w3.org/">W3C validator</a> will not point them out, since they are technically
+            not an error. Some people, though, may want to close all their tags anyway. </p>
+        <p>If you experience any problems, or have any suggestions, <a href="http://www.aliciaramirez.com/contact/"
+                title="Go to my contact page">let me know</a>.</p>
+        <h2>Before you start</h2>
+        <p><strong>Make sure <a href="http://validator.w3.org/">your code is valid</a></strong>, or you could get
+            unexpected results. The script assumes you have valid HTML5 code, but would like to make sure you didn't
+            leave any tags, unintentionally, unclosed.</p>
+        <p>This script doesn't check for self closing tags.</p>
+        <h2>Paste your code here:</h2>
+        <textarea id="unclosed-tags-source"></textarea><br><br>
+        <button class="button" id="unclosed-tags-submit">Check it!</button>
+        <div id="results" class="hidden"></div>
+        <br><br>
+
+        <br>
+    </main>
+    <footer>&copy; 2020</footer>
+
+    <script src="tag-checker.js"></script>
+</body>
+
+</html>
