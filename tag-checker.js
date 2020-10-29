@@ -77,6 +77,5 @@ function checkTags() {
     results.innerHTML = message;
     results.classList.remove("hidden");
 }
-// $('#unclosed-tags-source').numberfy();
     
                 
